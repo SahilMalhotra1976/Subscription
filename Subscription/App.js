@@ -16,7 +16,7 @@ import { auth } from "./Components/auth/components/firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 
 import NewPost from "./Components/NewPost/NewPost";
-import Plans from "./Components/Plans.jsx"; // ✅ Correct path for Plans component
+import Plans from "./Components/Plans.jsx"; 
 
 function HomePage() {
   const [userName, setUserName] = useState("");
@@ -49,7 +49,7 @@ function HomePage() {
             <p>Welcome, {userName}!</p>
             <button onClick={handleLogout}>Signout</button>
             <button onClick={() => navigate("/new-post")}>Create New Post</button>
-            <button onClick={() => navigate("/plans")}>View Plans</button> {/* ✅ Navigate to Plans */}
+            <button onClick={() => navigate("/plans")}>View Plans</button> 
           </>
         ) : (
           <Link to="/login">
@@ -90,7 +90,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/new-post" element={<NewPost />} />
-      <Route path="/plans" element={<Plans />} /> {/* ✅ Plans Route */}
+      <Route path="/plans" element={<Plans />} /> 
     </Routes>
   );
 }
