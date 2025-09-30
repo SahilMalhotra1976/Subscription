@@ -1,0 +1,103 @@
+/* Outline container */
+.container {
+  width: 100%;
+  max-width: 1020px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Post type selector */
+.Outline {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #0d1b2a;
+}
+
+.yes {
+  margin-left: 25px;
+  font-size: 1.2rem;
+}
+
+/* Form container for Article and Questions */
+.article-container {
+  width: 100%;
+  background-color: #e6f4f7; /* soft blue */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form groups */
+.title,
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels / title inside form */
+.title {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+/* Inputs and textareas */
+.text,
+input.input-field,
+textarea.textarea-field {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  padding: 12px 15px;
+  border-radius: 6px;
+  border: 1px solid #0d3b66;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #0d1b2a;
+  margin-bottom: 15px;
+}
+
+/* Textarea specific heights */
+.abstract {
+  height: 120px;
+}
+.problem {
+  height: 150px;
+}
+.article {
+  height: 300px;
+}
+
+/* Submit button */
+.btn,
+.submit-btn {
+  align-self: flex-end;
+  padding: 12px 25px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  background-color: #0d3b66;
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover,
+.submit-btn:hover {
+  background-color: #1ca3ec;
+  color: #ffffff;
+  font-weight: 700;
+}
